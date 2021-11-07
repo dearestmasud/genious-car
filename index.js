@@ -57,6 +57,10 @@ main().catch(console.dir);
 app.get('/', (req, res) => {
     res.send('server init');
 });
+
+app.get('/hello',(req,res)=>{
+    res.send('hello here')
+})
 app.listen(port, () => {
     console.log('server running on', port);
 })
